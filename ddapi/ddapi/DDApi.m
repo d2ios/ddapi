@@ -7,7 +7,7 @@
 //
 
 #import "DDApi.h"
-#import "AFNetworking.h"
+#import <AFNetworking/AFNetworking.h>
 #import <SystemConfiguration/CaptiveNetwork.h>
 #import <CommonCrypto/CommonDigest.h>
 #import <YYCache/YYCache.h>
