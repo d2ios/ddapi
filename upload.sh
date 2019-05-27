@@ -30,5 +30,5 @@ git add .
 git commit -am ${NewVersionNumber}
 git tag ${NewVersionNumber}
 git push origin master --tags
-pod repo push dlrepo ddapi.podspec --verbose --allow-warnings --use-libraries --use-modular-headers
+pod repo push ddrepo ddapi.podspec --verbose --allow-warnings --use-libraries --use-modular-headers
 
