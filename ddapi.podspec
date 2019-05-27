@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ddapi"
-  s.version      = "0.0.7"
+  s.version      = "0.0.1"
   s.summary      = "ddapi."
 
   # This description is used to generate tags and improve search results.
