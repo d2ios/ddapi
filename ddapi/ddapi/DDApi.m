@@ -288,7 +288,7 @@ static YYCache *_dataCache;
     }
     
     if (_logEnabled) {
-        ATLog(@"\n请求参数 = %@\n请求URL = %@\n请求方式 = %@\n缓存策略 = %@\n版本缓存 = %@",parameters ? [self jsonToString:parameters]:@"空", url, [self getMethodStr:method], [self cachePolicyStr:cachePolicy], _cacheVersionEnabled? @"启用":@"未启用");
+        ATLog(@"\n请求头 = %@\n请求参数 = %@\n请求URL = %@\n请求方式 = %@\n缓存策略 = %@\n版本缓存 = %@",_sessionManager.requestSerializer.HTTPRequestHeaders,parameters ? [self jsonToString:parameters]:@"空", url, [self getMethodStr:method], [self cachePolicyStr:cachePolicy], _cacheVersionEnabled? @"启用":@"未启用");
     }
     
     if (cachePolicy == ApiCachePolicyIgnoreCache) {
